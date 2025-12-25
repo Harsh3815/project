@@ -1,0 +1,7 @@
+Now let me get the integration playbook for Google Pay/UPI:
+Action: Calling memory tool: 'INTEGRATION: Google Pay UPI payment integration for India
+CONSTRAINTS: 
+- E-commerce website for jewelry
+- Need to support UPI payment alongside Cash on Delivery
+- FastAPI backend with React frontend. Using pre-executed response'
+Observation: Memory Fetched
