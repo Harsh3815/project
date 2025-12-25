@@ -1,0 +1,158 @@
+
+Action: file_editor view /app/design_guidelines.json
+Observation: /app/design_guidelines.json:
+1|{
+2|  "design_system": {
+3|    "identity": {
+4|      "name": "V.K Jewellers",
+5|      "archetype": "Jewel & Luxury",
+6|      "core_values": ["Timeless Elegance", "Artisan Craftsmanship", "Silver Purity"],
+7|      "emotional_tone": "Sophisticated, Mysterious, Trustworthy, Cinematic"
+8|    },
+9|    "typography": {
+10|      "font_family": {
+11|        "heading": "Playfair Display, serif",
+12|        "body": "Manrope, sans-serif",
+13|        "accent": "Cormorant Garamond, serif"
+14|      },
+15|      "scale": {
+16|        "h1": "text-5xl md:text-7xl font-medium tracking-tight leading-none",
+17|        "h2": "text-4xl md:text-5xl font-normal tracking-tight",
+18|        "h3": "text-2xl md:text-3xl font-normal tracking-wide",
+19|        "body_lg": "text-lg md:text-xl font-light leading-relaxed",
+20|        "body_base": "text-base font-light leading-relaxed",
+21|        "caption": "text-xs uppercase tracking-[0.2em] font-medium text-muted-foreground"
+22|      },
+23|      "usage_rules": [
+24|        "Use Playfair Display for all major headings (H1-H3).",
+25|        "Use Manrope for all UI text, buttons, and long-form descriptions.",
+26|        "Use Cormorant Garamond for italicized accent quotes or testimonials.",
+27|        "Headings must have tight tracking (-0.02em).",
+28|        "Captions must be uppercase with wide tracking (0.2em)."
+29|      ]
+30|    },
+31|    "colors": {
+32|      "palette": {
+33|        "background": "#020617",
+34|        "foreground": "#F8FAFC",
+35|        "primary": "#E2E8F0",
+36|        "primary_foreground": "#0F172A",
+37|        "secondary": "#1E293B",
+38|        "secondary_foreground": "#F8FAFC",
+39|        "accent": "#94A3B8",
+40|        "accent_foreground": "#0F172A",
+41|        "muted": "#1E293B",
+42|        "muted_foreground": "#94A3B8",
+43|        "border": "#334155",
+44|        "input": "#1E293B",
+45|        "ring": "#E2E8F0"
+46|      },
+47|      "gradients": {
+48|        "silver_sheen": "linear-gradient(135deg, #E2E8F0 0%, #94A3B8 100%)",
+49|        "midnight_depth": "linear-gradient(to bottom, #020617 0%, #0F172A 100%)"
+50|      },
+51|      "rules": [
+52|        "Dominant Theme: Dark Mode (Slate-950 base).",
+53|        "Primary Accent: Silver/Platinum tones (Slate-200 to Slate-400).",
+54|        "Avoid pure black (#000000). Use #020617 (Slate-950) for depth.",
+55|        "Text should never be pure white. Use #F8FAFC (Slate-50) or #E2E8F0 (Slate-200).",
+56|        "Gold accents are permitted but should be desaturated (Champagne Gold) to complement Silver."
+57|      ]
+58|    },
+59|    "spacing": {
+60|      "scale": "Tailwind Default + Custom Extensions",
+61|      "philosophy": "Luxurious & Airy. Use 2x standard spacing.",
+62|      "container_padding": "px-6 md:px-12 lg:px-24",
+63|      "section_spacing": "py-24 md:py-32",
+64|      "grid_gap": "gap-8 md:gap-12"
+65|    },
+66|    "components": {
+67|      "buttons": {
+68|        "primary": "bg-primary text-primary-foreground hover:bg-white rounded-sm px-8 py-3 font-medium transition-all duration-300 ease-out hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]",
+69|        "secondary": "border border-border bg-transparent text-foreground hover:border-primary hover:text-primary rounded-sm px-8 py-3 transition-all duration-300",
+70|        "ghost": "text-muted-foreground hover:text-foreground hover:bg-secondary/50 rounded-sm px-4 py-2 transition-colors"
+71|      },
+72|      "cards": {
+73|        "product": "group relative overflow-hidden bg-transparent rounded-none",
+74|        "feature": "bg-secondary/20 backdrop-blur-sm border border-white/5 p-8 rounded-sm hover:border-white/10 transition-colors"
+75|      },
+76|      "inputs": {
+77|        "default": "bg-secondary/30 border-white/10 focus:border-primary/50 focus:ring-0 rounded-sm h-12 px-4 text-foreground placeholder:text-muted-foreground/50 transition-all"
+78|      },
+79|      "navigation": {
+80|        "wrapper": "fixed top-0 w-full z-50 border-b border-white/5 bg-background/80 backdrop-blur-xl backdrop-saturate-150 supports-[backdrop-filter]:bg-background/60",
+81|        "link": "text-sm font-medium text-muted-foreground hover:text-foreground transition-colors tracking-wide"
+82|      }
+83|    },
+84|    "layout_strategies": {
+85|      "grid_system": "The 'Tetris' Grid (Mode A)",
+86|      "rules": [
+87|        "Avoid symmetric 3-column grids for collections.",
+88|        "Use a 12-column grid base.",
+89|        "Mix 'Hero' items (col-span-6 row-span-2) with 'Standard' items (col-span-3) and 'Tall' items (col-span-3 row-span-2).",
+90|        "Leave empty cells (col-span-1) occasionally for negative space."
+91|      ]
+92|    },
+93|    "visual_enhancers": {
+94|      "glassmorphism": "Use 'Crystal Glass' style: bg-white/5 backdrop-blur-xl border border-white/10.",
+95|      "textures": "Add a subtle noise texture overlay (opacity 0.03) to the entire body to reduce digital flatness.",
+96|      "shadows": "Use colored shadows for glow effects: shadow-[0_0_30px_-10px_rgba(226,232,240,0.15)].",
+97|      "borders": "Use 1px borders with very low opacity (white/10) for structure without visual weight."
+98|    },
+99|    "motion": {
+100|      "library": "framer-motion",
+101|      "principles": [
+102|        "Slow & Smooth: Duration 0.6s - 0.8s, Ease [0.22, 1, 0.36, 1] (custom cubic-bezier).",
+103|        "Stagger Children: 0.1s delay between list items.",
+104|        "Scroll Trigger: Elements fade in and move up (y: 20 -> y: 0) as they enter viewport."
+105|      ]
+106|    },
+107|    "media": {
+108|      "image_style": "Cinematic, High Contrast, Macro Focus. Dark backgrounds preferred.",
+109|      "image_urls": {
+110|        "hero": [
+111|          "https://images.unsplash.com/photo-1682364853107-9b87abbc0269?crop=entropy&cs=srgb&fm=jpg&q=85",
+112|          "https://images.pexels.com/photos/8980193/pexels-photo-8980193.jpeg"
+113|        ],
+114|        "rings": [
+115|          "https://images.unsplash.com/photo-1762019313711-8b5d1e4f7ba4?crop=entropy&cs=srgb&fm=jpg&q=85",
+116|          "https://images.pexels.com/photos/3091638/pexels-photo-3091638.jpeg"
+117|        ],
+118|        "necklaces": [
+119|          "https://images.unsplash.com/photo-1680477425240-cad536a96703?crop=entropy&cs=srgb&fm=jpg&q=85",
+120|          "https://images.pexels.com/photos/903160/pexels-photo-903160.jpeg"
+121|        ],
+122|        "earrings": [
+123|          "https://images.pexels.com/photos/7679889/pexels-photo-7679889.jpeg",
+124|          "https://images.pexels.com/photos/1648741/pexels-photo-1648741.jpeg"
+125|        ],
+126|        "lifestyle": [
+127|          "https://images.unsplash.com/photo-1765036753311-4a84e01f4a53?crop=entropy&cs=srgb&fm=jpg&q=85",
+128|          "https://images.unsplash.com/photo-1762810548877-63512759805e?crop=entropy&cs=srgb&fm=jpg&q=85"
+129|        ]
+130|      }
+131|    },
+132|    "accessibility": {
+133|      "contrast_check": "Ensure text is Slate-50 or Slate-200 on Slate-950 backgrounds.",
+134|      "focus_states": "Visible ring-2 ring-primary ring-offset-2 ring-offset-background.",
+135|      "reduced_motion": "Respect prefers-reduced-motion media query."
+136|    },
+137|    "instructions_to_main_agent": [
+138|      "1. SETUP: Install 'framer-motion', 'lucide-react', 'clsx', 'tailwind-merge' if not present.",
+139|      "2. THEME: Implement the Dark Mode palette in tailwind.config.js. Set 'slate-950' as the default body background.",
+140|      "3. FONTS: Import 'Playfair Display' and 'Manrope' from Google Fonts in index.css.",
+141|      "4. COMPONENTS: Build the 'Navbar' first using the Glassmorphism rules. It must be sticky.",
+142|      "5. LAYOUT: Use the 'Tetris Grid' for the 'Featured Collection' section on the Homepage.",
+143|      "6. PRODUCT PAGE: Use a split layout - 60% width for image (sticky), 40% for details (scrollable).",
+144|      "7. PAYMENT: Mock the Google Pay/UPI and COD flows visually in the Checkout page.",
+145|      "8. ADMIN: Keep the Admin panel clean and functional (Mode B Grid), distinct from the customer facing site (Mode A Grid)."
+146|    ],
+147|    "universal_guidelines": [
+148|      "Do not use gradients for text unless it's a very subtle shimmer.",
+149|      "Avoid 'Inter' font. Use 'Manrope' for UI.",
+150|      "Buttons must have a 'pressed' state (scale-95).",
+151|      "Images must have 'alt' tags.",
+152|      "Use 'sonner' for all toast notifications."
+153|    ]
+154|  }
+155|}
