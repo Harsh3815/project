@@ -1,0 +1,12 @@
+<head>
+    <style>
+        body {
+            background-color: #e3f2fd; /* This is a very light blue */
+            /* Use 'background-color: blue;' for a deep blue */
+        }
+        
+        .card {
+            background-color: white; /* Keeps your jewelry cards white so they stand out */
+        }
+    </style>
+</head>
