@@ -1,0 +1,23 @@
+<style>
+    body {
+        /* This creates the dark navy blue background */
+        background-color: #050a14; 
+        color: #ffffff; /* Makes the main text white */
+        font-family: 'serif'; /* Optional: gives it that elegant look */
+    }
+
+    .card {
+        /* Makes the jewelry cards dark to match the theme */
+        background-color: #0a1120;
+        border: 1px solid #1a2436;
+        color: white;
+    }
+
+    .btn-primary {
+        /* Makes the 'View Details' button look like the 'Shop Collection' button */
+        background-color: #d1d9e6;
+        color: #050a14;
+        border: none;
+        font-weight: bold;
+    }
+</style>
