@@ -1,0 +1,37 @@
+/* Hero Section Styling */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.hero-content h1 {
+    font-family: "Georgia", serif; /* Matches the V.K Jewellers elegant font */
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.btn-hero {
+    background-color: #d1d9e6; /* Silver color from your button reference */
+    color: #0a1128;
+    border: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
