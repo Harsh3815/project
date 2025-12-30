@@ -1,0 +1,14 @@
+/* This changes the 'Meera Jwellers' brand color */
+.navbar-brand {
+    color: #ffffff !important;
+}
+
+/* This changes the menu items (New Arrivals, etc.) to a light silver */
+.navbar-nav .nav-link {
+    color: #d1d9e6 !important;
+}
+
+/* This makes the menu items turn white when you hover over them */
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+}
